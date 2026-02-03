@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowné Luxx Collection | Luxury Cranial Prosthesis & Hair Restoration</title>
+    <meta name="description" content="Premium cranial prosthesis and custom wig solutions for women experiencing hair loss. Medical-grade quality, compassionate care, insurance accepted.">
+
+    <!-- Open Graph / Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://magical-faun-5f7bef.netlify.app/">
+    <meta property="og:title" content="Crowné Luxx Collection | Luxury Hair Restoration">
+    <meta property="og:description" content="Reclaim your confidence with premium cranial prosthesis and custom wigs. Medical-grade quality, insurance accepted, physician referrals welcome.">
+    <meta property="og:image" content="https://magical-faun-5f7bef.netlify.app/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crowné Luxx Collection | Luxury Hair Restoration">
+    <meta name="twitter:description" content="Reclaim your confidence with premium cranial prosthesis and custom wigs. Medical-grade quality, insurance accepted.">
+    <meta name="twitter:image" content="https://magical-faun-5f7bef.netlify.app/social-card.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #C9A962;
+            --gold-light: #D4BC7E;
+            --gold-dark: #A68B4B;
+            --charcoal: #1A1A1A;
+            --charcoal-soft: #2D2D2D;
+            --cream: #FAF8F5;
+            --cream-dark: #F0EDE8;
+            --white: #FFFFFF;
+            --text-dark: #1A1A1A;
+            --text-muted: #6B6B6B;
+            --text-light: #9A9A9A;
+            --rose: #E8D5D5;
+            --rose-soft: #F5EEEE;
+
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, sans-serif;
+
+            --transition: all 0.3s ease;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .section-eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--charcoal);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--charcoal);
+            border: 1px solid var(--charcoal);
+        }
+
+        .btn-outline:hover {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid var(--gold);
+        }
+
+        .btn-outline-light:hover {
+            background: var(--gold);
+            color: var(--charcoal);
+        }
+
+        /* Navigation */
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-wrapper.scrolled {
+            background: var(--charcoal);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--cream);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-cta {
+            padding: 0.75rem 1.75rem;
+            font-size: 0.7rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 1.5px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        /* Hero Section - Full Bleed Background */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .hero-bg-desktop {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right center;
+        }
+
+        .hero-bg-mobile {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(26,26,26,0.92) 0%,
+                rgba(26,26,26,0.75) 35%,
+                rgba(26,26,26,0.3) 60%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 4rem;
+            padding-top: 100px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            padding: 3rem 0;
+        }
+
+        .hero-eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            width: 50px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+            font-weight: 400;
+            color: var(--cream);
+            line-height: 1.08;
+            margin-bottom: 1.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            font-weight: 300;
+            color: rgba(250, 248, 245, 0.85);
+            line-height: 1.85;
+            margin-bottom: 2.5rem;
+            max-width: 520px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--cream);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .trust-bar-track {
+            display: flex;
+            animation: scroll-left 25s linear infinite;
+            width: max-content;
+        }
+
+        .trust-bar-track:hover {
+            animation-play-state: paused;
+        }
+
+        .trust-bar-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            padding: 0 2rem;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 400;
+            white-space: nowrap;
+        }
+
+        .trust-item svg {
+            width: 24px;
+            height: 24px;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 7rem 2rem;
+            background: var(--white);
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .services-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--cream);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+        }
+
+        .service-icon svg {
+            width: 32px;
+            height: 32px;
+            color: var(--gold);
+        }
+
+        .service-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* About/Story Section */
+        .about {
+            padding: 7rem 2rem;
+            background: var(--charcoal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(201,169,98,0.05) 0%, transparent 70%);
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-image {
+            aspect-ratio: 4/5;
+            background: var(--charcoal-soft);
+            border: 1px solid rgba(201,169,98,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .about-image::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid rgba(201,169,98,0.15);
+            z-index: -1;
+        }
+
+        .about-image-placeholder {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .about-text .section-eyebrow {
+            color: var(--gold);
+        }
+
+        .about-text .section-title {
+            color: var(--cream);
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            font-weight: 300;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-signature {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201,169,98,0.2);
+        }
+
+        .about-signature-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .about-signature-title {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            letter-spacing: 0.1em;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            padding: 7rem 2rem;
+            background: var(--cream);
+        }
+
+        .why-us-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-us-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .why-us-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .why-item {
+            background: var(--white);
+            padding: 2.5rem;
+            display: flex;
+            gap: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .why-item:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+        }
+
+        .why-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--gold);
+            line-height: 1;
+            opacity: 0.5;
+        }
+
+        .why-item-content h4 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 0.75rem;
+        }
+
+        .why-item-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* For Medical Professionals */
+        .medical {
+            padding: 7rem 2rem;
+            background: var(--white);
+        }
+
+        .medical-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .medical-text .section-subtitle {
+            margin-bottom: 2rem;
+        }
+
+        .medical-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .medical-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+
+        .medical-list li:last-child {
+            border-bottom: none;
+        }
+
+        .medical-list svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .medical-list span {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .medical-card {
+            background: var(--charcoal);
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .medical-card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .medical-card-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--gold);
+        }
+
+        .medical-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .medical-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 7rem 2rem;
+            background: var(--rose-soft);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .testimonials-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2.5rem;
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            color: var(--gold);
+            line-height: 1;
+            opacity: 0.3;
+            position: absolute;
+            top: 1.5rem;
+            left: 2rem;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--text-muted);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--cream-dark);
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+        }
+
+        .testimonial-info h5 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info span {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Process Section */
+        .process {
+            padding: 7rem 2rem;
+            background: var(--white);
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .process-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .process-steps {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 45px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.3;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-number {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 1.5rem;
+            background: var(--cream);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--gold);
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            margin-bottom: 0.75rem;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* Insurance Section */
+        .insurance {
+            padding: 5rem 2rem;
+            background: var(--charcoal);
+            text-align: center;
+        }
+
+        .insurance-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .insurance .section-eyebrow {
+            color: var(--gold);
+        }
+
+        .insurance .section-title {
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .insurance p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 7rem 2rem;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--rose-soft) 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta .section-title {
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            padding: 5rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(201,169,98,0.15);
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            height: 50px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-brand p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(201,169,98,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: var(--gold);
+            color: var(--charcoal);
+        }
+
+        .footer-links h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background: var(--charcoal);
+            z-index: 1001;
+            padding: 2rem;
+            transition: right 0.4s ease;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(201,169,98,0.2);
+        }
+
+        .mobile-nav-close {
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+        }
+
+        .mobile-nav-links li {
+            margin-bottom: 0;
+        }
+
+        .mobile-nav-links a {
+            display: block;
+            padding: 1rem 0;
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: var(--font-display);
+            border-bottom: 1px solid rgba(201,169,98,0.1);
+            transition: var(--transition);
+        }
+
+        .mobile-nav-links a:hover {
+            color: var(--gold);
+            padding-left: 0.5rem;
+        }
+
+        .mobile-nav-cta {
+            margin-top: 2rem;
+        }
+
+        .mobile-nav-cta .btn {
+            width: 100%;
+        }
+
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ===== PRO SCROLL ANIMATIONS ===== */
+
+        /* Base animation states */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Slide from left */
+        .slide-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .slide-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Slide from right */
+        .slide-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .slide-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Scale up */
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Blur in */
+        .blur-in {
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(20px);
+            transition: opacity 1s ease, filter 1s ease, transform 1s ease;
+        }
+
+        .blur-in.visible {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+
+        /* Stagger delays for children */
+        .stagger-children > *:nth-child(1) { transition-delay: 0s; }
+        .stagger-children > *:nth-child(2) { transition-delay: 0.1s; }
+        .stagger-children > *:nth-child(3) { transition-delay: 0.2s; }
+        .stagger-children > *:nth-child(4) { transition-delay: 0.3s; }
+        .stagger-children > *:nth-child(5) { transition-delay: 0.4s; }
+        .stagger-children > *:nth-child(6) { transition-delay: 0.5s; }
+
+        /* Hero specific animations */
+        .hero-text .hero-eyebrow {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+        }
+
+        .hero-text .hero-title {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+        }
+
+        .hero-text .hero-subtitle {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+        }
+
+        .hero-text .hero-buttons {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+        }
+
+        @keyframes heroFadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Parallax effect for hero background */
+        .hero-bg {
+            will-change: transform;
+            transition: transform 0.1s linear;
+        }
+
+        /* Floating animation for decorative elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Shimmer effect for gold elements */
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+            background-size: 200% auto;
+            transition: all 0.4s ease;
+        }
+
+        .btn-primary:hover {
+            background-position: right center;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(201, 169, 98, 0.3);
+        }
+
+        /* Card hover lift effect */
+        .service-card, .why-item, .testimonial-card {
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .why-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Process step counter animation */
+        .process-number {
+            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .process-step:hover .process-number {
+            transform: scale(1.1);
+            background: var(--gold);
+            color: var(--charcoal);
+        }
+
+        /* Section divider line animation */
+        .section-eyebrow::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            margin-top: 1rem;
+            transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+        }
+
+        .section-eyebrow.visible::after {
+            width: 60px;
+        }
+
+        /* Smooth section transitions */
+        section {
+            position: relative;
+        }
+
+        /* Image reveal animation */
+        .about-image {
+            overflow: hidden;
+        }
+
+        .about-image img {
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Nav link magnetic effect enhancement */
+        .nav-links a {
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Mobile touch feedback */
+        @media (max-width: 768px) {
+            .btn {
+                -webkit-tap-highlight-color: transparent;
+                transition: transform 0.2s ease, background 0.3s ease;
+            }
+
+            .btn:active {
+                transform: scale(0.97);
+            }
+
+            .service-card, .why-item, .testimonial-card {
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .service-card:active, .why-item:active, .testimonial-card:active {
+                transform: scale(0.98);
+            }
+        }
+
+        /* Smooth scrollbar */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                padding: 0 2.5rem;
+                padding-top: 100px;
+            }
+
+            .hero::before {
+                background: linear-gradient(
+                    90deg,
+                    rgba(26,26,26,0.95) 0%,
+                    rgba(26,26,26,0.8) 50%,
+                    rgba(26,26,26,0.4) 100%
+                );
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-image {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .about-text {
+                text-align: center;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .medical-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-steps::before {
+                display: none;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            /* Mobile hero - switch to portrait image */
+            .hero {
+                min-height: 100vh;
+            }
+
+            .hero-bg-desktop {
+                display: none;
+            }
+
+            .hero-bg-mobile {
+                display: block;
+            }
+
+            .hero::before {
+                background: linear-gradient(
+                    180deg,
+                    rgba(26,26,26,0.7) 0%,
+                    rgba(26,26,26,0.4) 30%,
+                    rgba(26,26,26,0.3) 50%,
+                    rgba(26,26,26,0.85) 75%,
+                    rgba(26,26,26,0.98) 100%
+                );
+            }
+
+            .hero-content {
+                padding: 0 1.5rem;
+                padding-top: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                min-height: 100vh;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                text-align: center;
+                padding-bottom: 3rem;
+            }
+
+            .hero-eyebrow {
+                justify-content: center;
+            }
+
+            .hero-eyebrow::before {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                margin: 0 auto 2rem;
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .trust-bar-track {
+                animation-duration: 15s;
+            }
+
+            .services, .about, .why-us, .medical, .testimonials, .process, .cta {
+                padding: 4rem 1.25rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-brand {
+                max-width: 100%;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Landscape mode on mobile devices */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .nav-wrapper {
+                background: var(--charcoal);
+            }
+
+            nav {
+                padding: 0.75rem 1.5rem;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 1.5rem;
+            }
+
+            .nav-links a {
+                font-size: 0.65rem;
+            }
+
+            .nav-cta {
+                display: inline-flex;
+                padding: 0.5rem 1rem;
+                font-size: 0.6rem;
+            }
+
+            .mobile-menu-btn {
+                display: none;
+            }
+
+            .hero {
+                min-height: 100vh;
+            }
+
+            .hero-bg-desktop {
+                display: block;
+            }
+
+            .hero-bg-mobile {
+                display: none;
+            }
+
+            .hero::before {
+                background: linear-gradient(
+                    90deg,
+                    rgba(26,26,26,0.95) 0%,
+                    rgba(26,26,26,0.7) 40%,
+                    transparent 100%
+                );
+            }
+
+            .hero-content {
+                padding: 0 2rem;
+                padding-top: 60px;
+                display: block;
+                min-height: auto;
+            }
+
+            .hero-text {
+                padding: 1rem 0;
+                max-width: 50%;
+            }
+
+            .hero-eyebrow {
+                font-size: 0.6rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .hero-eyebrow::before {
+                display: block;
+                width: 25px;
+            }
+
+            .hero-title {
+                font-size: 1.75rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+
+            .hero-buttons {
+                flex-direction: row;
+                gap: 0.75rem;
+            }
+
+            .hero-buttons .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.6rem;
+            }
+
+            .trust-bar {
+                padding: 1rem 0;
+            }
+
+            .trust-item {
+                font-size: 0.75rem;
+            }
+
+            .trust-item svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            .services, .about, .why-us, .medical, .testimonials, .process, .cta {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Extra small landscape (very short screens) */
+        @media (max-height: 400px) and (orientation: landscape) {
+            .hero-text {
+                padding: 0.5rem 0;
+            }
+
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.75rem;
+                margin-bottom: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <nav>
+            <a href="#" class="logo">
+                <img src="crowne-logo.png" alt="Crowné Luxx Collection">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#medical">For Physicians</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-cta">Book Consultation</a>
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="crowne-logo.png" alt="Crowné Luxx Collection" style="height: 40px;">
+            <button class="mobile-nav-close">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#medical">For Physicians</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+            <a href="#contact" class="btn btn-primary">Book Consultation</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="herobanner-desktop.png" alt="" class="hero-bg-desktop" aria-hidden="true">
+            <img src="hero-mobile.png" alt="" class="hero-bg-mobile" aria-hidden="true">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <div class="hero-eyebrow">Luxury Hair Restoration</div>
+                <h1 class="hero-title">Reclaim Your <em>Confidence</em> with Grace</h1>
+                <p class="hero-subtitle">Premium cranial prosthesis and custom wig solutions crafted with compassion for women experiencing hair loss. Medical-grade quality meets luxury aesthetics.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="#services" class="btn btn-outline-light">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="trust-bar-track">
+            <div class="trust-bar-content">
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    <span>Medical-Grade Quality</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Insurance Accepted</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    <span>Private & Confidential</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <span>25+ Years Experience</span>
+                </div>
+            </div>
+            <div class="trust-bar-content">
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    <span>Medical-Grade Quality</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Insurance Accepted</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    <span>Private & Confidential</span>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <span>25+ Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-header fade-in">
+            <div class="section-eyebrow">Our Services</div>
+            <h2 class="section-title">Luxury Solutions for Every Need</h2>
+            <p class="section-subtitle">From medical cranial prosthesis to custom fashion wigs, we provide premium hair solutions with the utmost care and discretion.</p>
+        </div>
+        <div class="services-grid stagger-children">
+            <div class="service-card scale-in">
+                <div class="service-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <h3 class="service-title">Cranial Prosthesis</h3>
+                <p class="service-description">Medical-grade hair prosthetics designed for women experiencing hair loss due to alopecia, chemotherapy, or other medical conditions. Often covered by insurance.</p>
+            </div>
+            <div class="service-card scale-in">
+                <div class="service-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                </div>
+                <h3 class="service-title">Custom Luxury Wigs</h3>
+                <p class="service-description">Handcrafted premium wigs using the finest human hair, custom-fitted and styled to match your unique features and lifestyle preferences.</p>
+            </div>
+            <div class="service-card scale-in">
+                <div class="service-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </div>
+                <h3 class="service-title">Private Consultations</h3>
+                <p class="service-description">Complimentary one-on-one consultations in our private studio. We'll discuss your needs, explore options, and create a personalized plan together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-image slide-left">
+                <img src="danielle headshot.png" alt="Danielle Johnson - Founder & Certified Hair Loss Specialist" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="about-text slide-right">
+                <div class="section-eyebrow">Our Story</div>
+                <h2 class="section-title">More Than Hair — It's About Restoring You</h2>
+                <p>For over 25 years, I've dedicated my life to helping women rediscover their confidence during some of their most challenging moments. I understand that hair loss isn't just about appearance — it touches the very core of how we see ourselves.</p>
+                <p>At Crowné Luxx Collection, every client receives my personal attention in a private, judgment-free space. Whether you're navigating medical hair loss or simply seeking a premium hair solution, you deserve to feel beautiful, confident, and completely yourself.</p>
+                <p>This isn't just my profession — it's my calling. Your transformation is my greatest reward.</p>
+                <div class="about-signature">
+                    <div class="about-signature-name">Danielle Johnson</div>
+                    <div class="about-signature-title">Founder & Certified Hair Loss Specialist</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="why-us-content">
+            <div class="why-us-header fade-in">
+                <div class="section-eyebrow">The Crowné Difference</div>
+                <h2 class="section-title">Why Women Trust Us</h2>
+                <p class="section-subtitle">We combine medical expertise with luxury service to deliver an experience that honors your journey.</p>
+            </div>
+            <div class="why-grid stagger-children">
+                <div class="why-item slide-left">
+                    <div class="why-number">01</div>
+                    <div class="why-item-content">
+                        <h4>Private Studio Experience</h4>
+                        <p>Your appointments take place in a comfortable, private setting where you can relax and focus on your transformation without worry.</p>
+                    </div>
+                </div>
+                <div class="why-item slide-right">
+                    <div class="why-number">02</div>
+                    <div class="why-item-content">
+                        <h4>Medical-Grade Standards</h4>
+                        <p>Our cranial prosthetics meet the highest medical standards, ensuring quality that physicians trust and insurance companies recognize.</p>
+                    </div>
+                </div>
+                <div class="why-item slide-left">
+                    <div class="why-number">03</div>
+                    <div class="why-item-content">
+                        <h4>Custom-Fitted Perfection</h4>
+                        <p>Every piece is meticulously fitted and styled to complement your face shape, skin tone, and personal style preferences.</p>
+                    </div>
+                </div>
+                <div class="why-item slide-right">
+                    <div class="why-number">04</div>
+                    <div class="why-item-content">
+                        <h4>Compassionate Care</h4>
+                        <p>We understand the emotional journey of hair loss. You'll be treated with empathy, respect, and the dignity you deserve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Medical Professionals -->
+    <section class="medical" id="medical">
+        <div class="medical-content">
+            <div class="medical-text slide-left">
+                <div class="section-eyebrow">For Medical Professionals</div>
+                <h2 class="section-title">Partner With Us for Your Patients</h2>
+                <p class="section-subtitle">We work closely with dermatologists, oncologists, and healthcare providers to ensure seamless care for patients experiencing medical hair loss.</p>
+                <ul class="medical-list">
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Insurance-compliant documentation and prescriptions accepted</span>
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Priority scheduling for referred patients</span>
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Direct communication with your office on patient progress</span>
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Educational materials available for your waiting room</span>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Request Referral Information</a>
+            </div>
+            <div class="medical-card slide-right">
+                <div class="medical-card-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                </div>
+                <h3>Physician Referral Program</h3>
+                <p>Join our network of trusted healthcare providers. We'll ensure your patients receive compassionate, professional care that reflects well on your practice.</p>
+                <a href="mailto:referrals@crowneluxx.com" class="btn btn-primary">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-header fade-in">
+            <div class="section-eyebrow">Testimonials</div>
+            <h2 class="section-title">Stories of Transformation</h2>
+            <p class="section-subtitle">Hear from women who have experienced the Crowné difference.</p>
+        </div>
+        <div class="testimonials-grid stagger-children">
+            <div class="testimonial-card scale-in">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">After losing my hair to chemotherapy, I was devastated. Danielle not only gave me a beautiful wig but restored my confidence. I felt like myself again for the first time in months.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-info">
+                        <h5>Margaret T.</h5>
+                        <span>Breast Cancer Survivor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card scale-in">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">The privacy and compassion I experienced was unlike any other salon. Danielle truly understands what women going through hair loss need — not just a wig, but genuine care.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">S</div>
+                    <div class="testimonial-info">
+                        <h5>Sandra L.</h5>
+                        <span>Alopecia Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card scale-in">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">I've been wearing wigs for years, but never found one that looked this natural until I came here. The quality is exceptional and the fit is perfect. Worth every penny.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">P</div>
+                    <div class="testimonial-info">
+                        <h5>Patricia R.</h5>
+                        <span>Long-term Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="process-header fade-in">
+            <div class="section-eyebrow">Your Journey</div>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">From consultation to confidence — a seamless experience designed around you.</p>
+        </div>
+        <div class="process-steps stagger-children">
+            <div class="process-step scale-in">
+                <div class="process-number">1</div>
+                <h4>Consultation</h4>
+                <p>Schedule your private, complimentary consultation to discuss your needs and explore options.</p>
+            </div>
+            <div class="process-step scale-in">
+                <div class="process-number">2</div>
+                <h4>Custom Fitting</h4>
+                <p>We take precise measurements and work with you to select the perfect style, color, and texture.</p>
+            </div>
+            <div class="process-step scale-in">
+                <div class="process-number">3</div>
+                <h4>Creation</h4>
+                <p>Your custom piece is handcrafted to our exacting standards using premium materials.</p>
+            </div>
+            <div class="process-step scale-in">
+                <div class="process-number">4</div>
+                <h4>Reveal</h4>
+                <p>Return for your final fitting, styling, and the moment you've been waiting for — your transformation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Section -->
+    <section class="insurance">
+        <div class="insurance-content fade-in">
+            <div class="section-eyebrow">Insurance</div>
+            <h2 class="section-title">Cranial Prosthesis Coverage</h2>
+            <p>Many insurance plans cover cranial prosthetics when prescribed by a physician. We'll help you navigate the process and maximize your benefits. Ask about our insurance assistance during your consultation.</p>
+            <a href="#contact" class="btn btn-outline-light">Learn About Coverage</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-content blur-in">
+            <div class="section-eyebrow">Begin Your Journey</div>
+            <h2 class="section-title">Ready to Reclaim Your Confidence?</h2>
+            <p>Schedule your complimentary private consultation today. Together, we'll find the perfect solution that honors your unique beauty.</p>
+            <div class="cta-buttons">
+                <a href="tel:+15555551234" class="btn btn-primary">Call (555) 555-1234</a>
+                <a href="mailto:hello@crowneluxx.com" class="btn btn-outline">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="crowne-logo.png" alt="Crowné Luxx Collection" class="footer-logo">
+                <p>Premium cranial prosthesis and luxury wig solutions for women. Compassionate care, medical-grade quality, beautiful results.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Cranial Prosthesis</a></li>
+                    <li><a href="#services">Custom Wigs</a></li>
+                    <li><a href="#services">Consultations</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#medical">For Physicians</a></li>
+                    <li><a href="#">Insurance Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+15555551234">(555) 555-1234</a></li>
+                    <li><a href="mailto:hello@crowneluxx.com">hello@crowneluxx.com</a></li>
+                    <li><a href="#">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Crowné Luxx Collection. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== PRO SCROLL ANIMATIONS & EFFECTS =====
+
+        // Navigation scroll effect with smooth transition
+        const navWrapper = document.querySelector('.nav-wrapper');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 50) {
+                navWrapper.classList.add('scrolled');
+            } else {
+                navWrapper.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        }, { passive: true });
+
+        // Mobile navigation
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+        const mobileNavClose = document.querySelector('.mobile-nav-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+        function openMobileNav() {
+            mobileNav.classList.add('active');
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileNav);
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        mobileNavOverlay.addEventListener('click', closeMobileNav);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileNav));
+
+        // ===== INTERSECTION OBSERVER FOR SCROLL ANIMATIONS =====
+        const animatedElements = document.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in, .blur-in, .section-eyebrow');
+
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const animationObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: unobserve after animation
+                    // animationObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(el => animationObserver.observe(el));
+
+        // ===== PARALLAX EFFECT FOR HERO =====
+        const heroBackground = document.querySelector('.hero-bg');
+        const hero = document.querySelector('.hero');
+
+        if (heroBackground && window.innerWidth > 768) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY;
+                const heroHeight = hero.offsetHeight;
+
+                if (scrolled < heroHeight) {
+                    const parallaxSpeed = 0.4;
+                    heroBackground.style.transform = `translateY(${scrolled * parallaxSpeed}px) scale(1.1)`;
+                }
+            }, { passive: true });
+
+            // Initialize with scale for parallax effect
+            heroBackground.style.transform = 'scale(1.1)';
+        }
+
+        // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ===== STAGGER ANIMATION FOR GRID ITEMS =====
+        const staggerContainers = document.querySelectorAll('.services-grid, .why-grid, .testimonials-grid, .process-steps');
+
+        staggerContainers.forEach(container => {
+            const children = container.children;
+            Array.from(children).forEach((child, index) => {
+                child.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
+
+        // ===== COUNTER ANIMATION FOR STATS (if any) =====
+        function animateCounter(el, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current);
+                }
+            }, 30);
+        }
+
+        // ===== BUTTON RIPPLE EFFECT =====
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s ease-out;
+                    pointer-events: none;
+                `;
+
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // ===== TILT EFFECT ON CARDS (Desktop only) =====
+        if (window.innerWidth > 1024) {
+            document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 20;
+                    const rotateY = (centerX - x) / 20;
+
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-12px)`;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+                });
+            });
+        }
+
+        // ===== SCROLL PROGRESS INDICATOR =====
+        const progressBar = document.createElement('div');
+        progressBar.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            z-index: 9999;
+            width: 0%;
+            transition: width 0.1s ease;
+        `;
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+        }, { passive: true });
+
+        // ===== LAZY LOAD IMAGES =====
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // ===== TOUCH OPTIMIZATION FOR MOBILE =====
+        if ('ontouchstart' in window) {
+            document.body.classList.add('touch-device');
+        }
+    </script>
+</body>
+</html>
