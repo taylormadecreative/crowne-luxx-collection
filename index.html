@@ -1478,9 +1478,10 @@
             .hero::before {
                 background: linear-gradient(
                     180deg,
-                    rgba(26,26,26,0.7) 0%,
-                    rgba(26,26,26,0.4) 30%,
-                    rgba(26,26,26,0.3) 50%,
+                    rgba(26,26,26,0.5) 0%,
+                    rgba(26,26,26,0.1) 20%,
+                    rgba(26,26,26,0.0) 40%,
+                    rgba(26,26,26,0.3) 60%,
                     rgba(26,26,26,0.85) 75%,
                     rgba(26,26,26,0.98) 100%
                 );
@@ -1750,7 +1751,9 @@
             <video class="hero-bg-video" autoplay muted loop playsinline poster="herobanner-desktop.png">
                 <source src="banner-video.mp4" type="video/mp4">
             </video>
-            <img src="hero-mobile.png" alt="" class="hero-bg-mobile" aria-hidden="true">
+            <video class="hero-bg-mobile" autoplay muted loop playsinline poster="hero-mobile.png">
+                <source src="mobile-banner.mp4" type="video/mp4">
+            </video>
         </div>
         <div class="hero-content">
             <div class="hero-text fade-in">
@@ -2151,16 +2154,16 @@
         animatedElements.forEach(el => animationObserver.observe(el));
 
         // ===== SEAMLESS VIDEO LOOP =====
-        const heroVideo = document.querySelector('.hero-bg-video');
-        if (heroVideo) {
-            heroVideo.addEventListener('timeupdate', function() {
-                // Seek back to start just before the end to avoid the loop gap
-                if (this.duration - this.currentTime < 0.3) {
-                    this.currentTime = 0;
-                    this.play();
-                }
-            });
-        }
+        document.querySelectorAll('.hero-bg-video, .hero-bg-mobile').forEach(function(video) {
+            if (video.tagName === 'VIDEO') {
+                video.addEventListener('timeupdate', function() {
+                    if (this.duration - this.currentTime < 0.3) {
+                        this.currentTime = 0;
+                        this.play();
+                    }
+                });
+            }
+        });
 
         // ===== PARALLAX EFFECT FOR HERO =====
         const heroBackground = document.querySelector('.hero-bg');
