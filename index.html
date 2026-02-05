@@ -265,7 +265,7 @@
             z-index: 0;
         }
 
-        .hero-bg-desktop {
+        .hero-bg-video {
             display: block;
             width: 100%;
             height: 100%;
@@ -1467,7 +1467,7 @@
                 min-height: 100vh;
             }
 
-            .hero-bg-desktop {
+            .hero-bg-video {
                 display: none;
             }
 
@@ -1597,7 +1597,7 @@
                 min-height: 100vh;
             }
 
-            .hero-bg-desktop {
+            .hero-bg-video {
                 display: block;
             }
 
@@ -1747,7 +1747,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
-            <img src="herobanner-desktop.png" alt="" class="hero-bg-desktop" aria-hidden="true">
+            <video class="hero-bg-video" autoplay muted loop playsinline poster="herobanner-desktop.png">
+                <source src="banner-video.mp4" type="video/mp4">
+            </video>
             <img src="hero-mobile.png" alt="" class="hero-bg-mobile" aria-hidden="true">
         </div>
         <div class="hero-content">
@@ -2147,6 +2149,18 @@
         }, observerOptions);
 
         animatedElements.forEach(el => animationObserver.observe(el));
+
+        // ===== SEAMLESS VIDEO LOOP =====
+        const heroVideo = document.querySelector('.hero-bg-video');
+        if (heroVideo) {
+            heroVideo.addEventListener('timeupdate', function() {
+                // Seek back to start just before the end to avoid the loop gap
+                if (this.duration - this.currentTime < 0.3) {
+                    this.currentTime = 0;
+                    this.play();
+                }
+            });
+        }
 
         // ===== PARALLAX EFFECT FOR HERO =====
         const heroBackground = document.querySelector('.hero-bg');
