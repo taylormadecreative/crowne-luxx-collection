@@ -1462,7 +1462,7 @@
                 display: flex;
             }
 
-            /* Mobile hero - switch to portrait image */
+            /* Mobile hero - switch to portrait video */
             .hero {
                 min-height: 100vh;
             }
@@ -1478,11 +1478,11 @@
             .hero::before {
                 background: linear-gradient(
                     180deg,
-                    rgba(26,26,26,0.5) 0%,
-                    rgba(26,26,26,0.1) 20%,
-                    rgba(26,26,26,0.0) 40%,
-                    rgba(26,26,26,0.3) 60%,
-                    rgba(26,26,26,0.85) 75%,
+                    rgba(26,26,26,0.7) 0%,
+                    rgba(26,26,26,0.45) 25%,
+                    rgba(26,26,26,0.25) 45%,
+                    rgba(26,26,26,0.35) 60%,
+                    rgba(26,26,26,0.85) 78%,
                     rgba(26,26,26,0.98) 100%
                 );
             }
@@ -1492,7 +1492,6 @@
                 padding-top: 80px;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end;
                 min-height: 100vh;
             }
 
@@ -1500,6 +1499,14 @@
                 max-width: 100%;
                 text-align: center;
                 padding-bottom: 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 1;
+            }
+
+            .hero-text-top {
+                padding-top: 1rem;
             }
 
             .hero-eyebrow {
@@ -1511,7 +1518,7 @@
             }
 
             .hero-title {
-                font-size: 2.5rem;
+                font-size: 2.25rem;
             }
 
             .hero-subtitle {
@@ -1757,12 +1764,16 @@
         </div>
         <div class="hero-content">
             <div class="hero-text fade-in">
-                <div class="hero-eyebrow">Luxury Hair Restoration</div>
-                <h1 class="hero-title">Reclaim Your <em>Confidence</em> with Grace</h1>
-                <p class="hero-subtitle">Premium cranial prosthesis and custom wig solutions crafted with compassion for women experiencing hair loss. Medical-grade quality meets luxury aesthetics.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
-                    <a href="#services" class="btn btn-outline-light">Explore Services</a>
+                <div class="hero-text-top">
+                    <div class="hero-eyebrow">Luxury Hair Restoration</div>
+                    <h1 class="hero-title">Reclaim Your <em>Confidence</em> with Grace</h1>
+                </div>
+                <div class="hero-text-bottom">
+                    <p class="hero-subtitle">Premium cranial prosthesis and custom wig solutions crafted with compassion for women experiencing hair loss. Medical-grade quality meets luxury aesthetics.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                        <a href="#services" class="btn btn-outline-light">Explore Services</a>
+                    </div>
                 </div>
             </div>
         </div>
